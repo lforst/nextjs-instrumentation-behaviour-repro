@@ -1,4 +1,13 @@
-/** Add your relevant code here for the issue to reproduce */
+"use client";
+
 export default function Home() {
-  return null;
+  return (
+    <button
+      onClick={() => {
+        fetch("/make-req");
+      }}
+    >
+      click me to test (see server logs for errors)
+    </button>
+  );
 }
